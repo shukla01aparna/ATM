@@ -7,3 +7,4 @@ Created a simple ATM where a user a select type of transaction they want to perf
 - Disable Submit button on Cash Back if user attempts to withdraw more than what is available
 - Added Select Option with Deposit and Cash Back options
 - Transaction Types are only visible when user selects an option
+- User cannot enter a value less than zero
