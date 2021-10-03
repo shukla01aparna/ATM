@@ -1,11 +1,8 @@
 const ATMDeposit = ({ onChange, isDeposit }) => {
-  const choice = ["Deposit", "Withdrawal"];
-  const color = ["green", "red"];
+  const choice = ["Deposit", "Cash Back"];
   return (
     <label className="label huge">
-      <h3 className={color[Number(!isDeposit)]}>
-        {choice[Number(!isDeposit)]}
-      </h3>
+      <h3>{choice[Number(!isDeposit)]}</h3>
       <input
         min="0"
         id="amount"
@@ -42,8 +39,18 @@ const Account = () => {
       <h2 id="total">{status}</h2>
       <br />
       <h4>What would you like to do?</h4>
-      <button onClick={() => setIsDeposit(true)}>Deposit</button>
-      <button onClick={() => setIsDeposit(false)}>Withdrawal</button>
+      <button
+        className={isDeposit ? "active" : ""}
+        onClick={() => setIsDeposit(true)}
+      >
+        Deposit
+      </button>
+      <button
+        className={!isDeposit ? "active" : ""}
+        onClick={() => setIsDeposit(false)}
+      >
+        Cash Back
+      </button>
       <br />
       <br />
       <ATMDeposit onChange={handleChange} isDeposit={isDeposit}>
