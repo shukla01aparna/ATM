@@ -1,10 +1,8 @@
-# Simple ATM 
-
-Created a simple ATM where a user a select type of transaction they want to perform. 
-
-**Improvements made**
-- Added Validation and alert message to ensure user cannot withdraw more than is available from the account
-- Disable Submit button on Cash Back if user attempts to withdraw more than what is available
-- Added Select Option with Deposit and Cash Back options
-- Transaction Types are only visible when user selects an option
-- User cannot enter a value less than zero
+Title : ATM App <br>
+Deascription: Created ATM App where user can deposit or withdraw money. At top it will show available account balance. An alert message box will popup with any type of transaction showing account updated balance.<br><br>
+ Improvements made:
+- Changed button to Select Option with Deposit and Withdrawl options
+- Added style for clear visbility.
+- Added popup window which gives diffrent type of transation alerts : Account balance after deposit, withdrawl etc.
+- Disable Submit button on withdrawl if user attempts to withdraw more than what is available and a alert message box will popup.
+-User can enter only numeric value more then zero. 
